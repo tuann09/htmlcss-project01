@@ -547,6 +547,9 @@ a {
     align-items: center;
     border-radius: 4px;
 }
+.footer .social-link + .social-link {
+    margin-left: 16px;
+}
 .footer .social-link:hover {
     background: #f9f9f9;
 }
