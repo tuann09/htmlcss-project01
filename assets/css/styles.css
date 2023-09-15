@@ -7,6 +7,10 @@
 html {
     font-size: 62.5%;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 1.6rem;
     font-family: "Poppins";
@@ -50,8 +54,10 @@ a {
     top: -26px;
     z-index: 1;
 }
-.header {
+.hero-wrap {
     position: relative;
+    display: flex;
+    align-items: center;
     background: #e6f0ff;
     height: calc(100vh - 90px);
 }
@@ -87,27 +93,25 @@ a {
 .navbar ul li a:hover {
     color: red;
 }
-.hero {
-    padding-top: 130px;
-}
-.hero .info {
+
+.hero-wrap .info {
     width: 51%;
 }
-.hero .sub-title {
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.18px;
 }
-.hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     color: #000336;
     font-size: 6.2rem;
     font-weight: 700;
     line-height: 1.19;
 }
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 1.8rem;
